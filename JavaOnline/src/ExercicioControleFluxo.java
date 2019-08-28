@@ -28,6 +28,7 @@ public class ExercicioControleFluxo {
 			imposto = 0;
 			System.out.println("coloque um valor de salário positivo");
 		}		
+		
 	}
 
 }

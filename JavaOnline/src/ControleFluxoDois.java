@@ -2,6 +2,7 @@
 public class ControleFluxoDois {
 
 	public static void main(String[] args) {
+		
 		byte dia = 8;
 		
 		// char, int, byte, short, enum, String (esses são os tipos que podem ir no switch)
@@ -29,6 +30,9 @@ public class ControleFluxoDois {
 			break;
 		default:
 			System.out.println("Coloque um dia da semana valido");
+			
 		}
+		
 	}
+	
 }
