@@ -1,4 +1,4 @@
-package br.com.abc;
+package br.com.abc.introducao.arrays;
 public class ArraysUm {
 	
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package br.com.abc;
+package br.com.abc.introducao.controlefluxo;
 /*
  * Crie uma variável salario e imprima seu imposto de acordo com a tabela
  * abaixo:
