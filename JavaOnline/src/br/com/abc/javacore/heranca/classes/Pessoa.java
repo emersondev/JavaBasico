@@ -2,9 +2,21 @@ package br.com.abc.javacore.heranca.classes;
 
 public class Pessoa {
 
-	private String nome;
-	private String cpf;
-	private Endereco endereco;
+	protected String nome;
+	protected String cpf;
+	protected Endereco endereco;
+	
+	public Pessoa(String nome) {
+		this.nome = nome; // construtor da própria classe ***
+	}
+	
+	public Pessoa(String nome, String cpf) {
+		this(nome); // chama o construtor da própria classe ***
+		this.cpf = cpf;
+	}
+	
+	public Pessoa() {
+	}
 
 	public String getNome() {
 		return this.nome;

@@ -18,8 +18,9 @@ public class HerancaTest {
 		p1.setEndereco(e1);
 		p1.print();
 		
-		Funcionario f1 = new Funcionario();
-		f1.setNome("Capone");
+		System.out.println("\n");
+		
+		Funcionario f1 = new Funcionario("Capone");
 		f1.setCpf("123.321.122-12");
 		f1.setSalario(15000);
 		f1.setEndereco(e1);

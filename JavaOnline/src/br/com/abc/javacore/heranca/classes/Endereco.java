@@ -20,5 +20,9 @@ public class Endereco {
 	public void setBairro(String bairro) {
 		this.bairro = bairro;
 	}
+	
+	public void print() {
+		System.out.println("Rua: " + this.logradouro);
+	}
 
 }
