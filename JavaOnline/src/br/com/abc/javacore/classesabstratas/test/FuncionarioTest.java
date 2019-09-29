@@ -13,9 +13,9 @@ public class FuncionarioTest {
 		g1.calculaSalario();
 		v1.calculaSalario();
 		
-		System.out.println(g1);
+		g1.print();
 		System.out.println("\n----------------------\n");
-		System.out.println(v1);
+		v1.print();
 	}
 	
 }
