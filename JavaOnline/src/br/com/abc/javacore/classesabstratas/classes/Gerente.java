@@ -14,4 +14,5 @@ public class Gerente extends Funcionario {
 	public void calculaSalario() {
 		setSalario(getSalario() + (getSalario() * 0.2));
 	}
+	
 }

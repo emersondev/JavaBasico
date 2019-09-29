@@ -1,8 +1,11 @@
 package br.com.abc.javacore.classesabstratas.classes;
 
+/**
+ * Classes Abstratas podem estender outras Classes Abstratas
+ *
+ */
 public abstract class Funcionario extends Pessoa {
-
-	private String nome;
+	
 	private String clt;
 	private double salario;
 	
@@ -17,14 +20,6 @@ public abstract class Funcionario extends Pessoa {
 	}
 	
 	public abstract void calculaSalario();
-	
-	public String getNome() {
-		return this.nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 
 	public String getClt() {
 		return this.clt;
@@ -45,6 +40,11 @@ public abstract class Funcionario extends Pessoa {
 	@Override
 	public String toString() {
 		return "Nome: " + nome + ", CLT: " + clt + ", Salario: " + salario;
+	}
+	
+	@Override
+	public void print() {
+		System.out.println(toString());
 	}
 
 }
