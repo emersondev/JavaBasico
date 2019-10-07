@@ -36,7 +36,7 @@ public class CheckedExceptionTest2 {
 			System.out.println("Dentro do catch");
 			e.printStackTrace();
 		} finally { // bloco finally sempre vai ser executado
-System.out.println("Fechando arquivo");
+			System.out.println("Fechando arquivo");
 		}
 	}
 
