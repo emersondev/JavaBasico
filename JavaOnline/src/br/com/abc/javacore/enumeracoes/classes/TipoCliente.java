@@ -14,6 +14,10 @@ public enum TipoCliente {
 	private int tipo;
 	private String nome;
 	
+	/**
+	 * Construtores de enumerações, eles mesmos vão se chamar, então não pode ser publico por isso (ele já é considerado private)
+	 * 
+	 */
 	TipoCliente(int tipo, String nome) {
 		this.tipo = tipo;
 		this.nome = nome;
