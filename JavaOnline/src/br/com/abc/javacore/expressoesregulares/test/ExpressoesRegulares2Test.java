@@ -1,0 +1,29 @@
+package br.com.abc.javacore.expressoesregulares.test;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class ExpressoesRegulares2Test {
+
+	public static void main(String[] args) {
+		// \d - todos os dígito
+		// \D - tudo o que não for dígito
+		// \s - espaços em branco ---> são considerados espaços em branco \t \n \r \f
+		// \S - caracter que não é branco
+		// \w - caracteres de palavras a-z, A-Z e digitos e _
+		// \W - tudo que não for caracter de palavra
+		
+		String regex = "\\w"; // temos que escapar
+		String texto = "a48gre651ger#!@g65\r_"; // as regex não utilizam o caracter que já deu match
+		Pattern pattern = Pattern.compile(regex); // compilo a regra da regex em uma variável
+		Matcher matcher = pattern.matcher(texto); // utilizo a regex para dar match no texto
+		System.out.println("texto: " + texto);
+		System.out.println("índice: 0123456789...");
+		System.out.println("expressão: " + matcher.pattern()); // expressão que o matcher vai usar pra encontrar
+		System.out.println("posições encontradas");
+		while(matcher.find()) { // descubro quantos matchs foram dados
+			System.out.print(matcher.start() + " "); // mostra as posições
+		}
+	}
+
+}
