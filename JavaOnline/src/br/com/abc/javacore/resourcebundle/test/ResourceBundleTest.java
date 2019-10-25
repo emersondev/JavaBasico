@@ -27,7 +27,7 @@ public class ResourceBundleTest {
 		 * messages_pt_BR.properties // ele vai procurar pela localização local da sua máquina
 		 * messages_pt.properties // procura pela linguagem padrão da sua máquina
 		 * messages.properties // procura pelo base name
-		 * // caso ele não encontre, ai sim ele lança uma exception
+		 * // caso ele não encontre, ai sim ele lança uma exception 
 		 */
 		
 		
